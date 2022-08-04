@@ -1,0 +1,35 @@
+//faq
+.faq-content{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include pad(){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include mobile(){
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+    .title{
+        color: #000;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        @include pad(){
+            font-size: $font-m;
+            line-height: $line-height-36;
+        }
+    }
+    .subtitle{
+        font-size: $font-m;
+        line-height: $line-height-36;
+    }
+    .faq-content-question{
+        font-size: $font-s;
+        line-height: $line-height-30;
+        .content{
+            font-size: 16px;
+            line-height: $base-line-height;
+        }
+
+    }
+}   
