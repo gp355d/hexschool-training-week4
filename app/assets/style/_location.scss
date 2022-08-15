@@ -53,6 +53,7 @@
         font-size: 18px;
         line-height: 26px;
         width: 73%;
+        padding: 6px 0 6px 12px;
     }
 }
 .branch-list{
@@ -97,10 +98,9 @@
         font-size: $font-m;
         line-height: $line-height-36;
         color: $thirdtextColor;
-        // padding: 8px 0;
+        padding: 8px 0 8px 24px;
         border-left: 1px solid $secondborderColor;
         border-right: 1px solid $secondborderColor;
-        
     }
     .branch-intro{
         padding: 8px 24px 0 24px;
