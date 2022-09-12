@@ -1,0 +1,327 @@
+//special
+main{
+    padding-bottom: 80px;
+    @include mobile(){
+        padding-bottom: 40px;
+    }
+}
+.bottom-menu.spacial{
+    @include mobile(){
+        display: block;
+    }
+    a {
+        font-size: 16px;
+        line-height: $base-line-height;
+
+    }
+    .search-icon{
+        @include mobile(){
+            display: none;
+        }
+    }
+    .list {
+        @include mobile(){
+            width: 100%;
+        }
+    }
+}
+
+.breadcrumbs-path{
+    a{
+        color: #000;
+    }
+    a::after{
+        content:"/";
+        padding: 0px 2px;
+    }
+    .active{
+        color: $bgColor;
+        &::after{
+            content:"";
+        }
+    }
+
+}
+.hashtag {
+    a{
+        display: inline-block;
+        font-size: $font-m;
+        line-height: $line-height-36;
+        color: $bgColor;
+        &:first-child{
+            margin-right: 15px;
+        }
+    }
+    span{
+        font-size: 16px;
+        line-height: $base-line-height;
+    }
+}
+    // width: 70%;
+.page{
+    color: #000;
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: $base-line-height;
+    li:first-child{
+       a{
+            margin-left: 12px;
+       }
+    }
+    li:last-child{
+        a{
+             margin-right: 12px;
+        }
+     }
+    a{
+        color: #000;
+    }
+}
+.next{
+    width: 74.1%;
+    @include pad(){
+        width: 100%;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+.special-list{
+    width: 83.3%;
+    @include mobile(){
+        width: 100%;
+    }
+    li{
+        .title{
+            color: #000;
+        }
+        .subtitle{
+            font-size: $font-m;
+            line-height: $line-height-36;
+            @include mobile(){
+                font-size: 16px;
+                line-height: $base-line-height;
+            }
+        }
+        .content{
+            color: $blog-text-color;
+        }
+        // &:last-child{
+        //     margin-bottom: 40px;
+        //     @include mobile(){
+        //         margin-bottom: 64px;
+        //     }
+        // }
+    }
+}
+.hashtag-category{
+    width: 29%;
+    color: $bgColor;
+    @include pad(){
+        font-size: $font-s;
+        line-height: $line-height-36;
+    }
+    @include mobile(){
+        display: none;
+    }
+    .tag{
+        font-size: 48px;
+        margin-right: 8px;
+        @include pad(){
+            font-size: 16px;
+            line-height: $base-line-height;
+        }
+    }
+    .tags{
+        font-size: 32px;
+        line-height: 48px;
+        @include pad(){
+            font-size: 16px;
+            line-height: $base-line-height;
+        }
+    }
+    > div span{
+        font-size: 16px;
+        line-height: $base-line-height;
+        margin-right: 24px;
+    }
+}
+.social-icon-list{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #707070;
+    li{
+        margin-right: 16px;
+    }
+    a{
+        color: #000;
+    }
+}
+
+.blog{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include pad(){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include mobile(){
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .title{
+        color: #000;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+    }
+    .blog-list{
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @include mobile(){
+            flex-wrap: wrap;
+        }
+        img{
+            width: 50%;
+            object-fit: cover;
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        .blog-info{
+            width: 48%;
+            @include mobile(){
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    .more{
+        justify-content: flex-end;
+        a{
+            font-size: 36px;
+            line-height: 54px;
+            color: $textColor;
+        }
+        @include pad(){
+            display: none;
+        }
+    }
+    .blog-info-title{
+        font-size: 32px;
+        line-height: 48px;
+        color: $textColor;
+        @include pad(){
+            font-size: $font-m;
+            line-height: $line-height-36;
+        }
+    .blog-info-subtitle{
+        font-size: $font-s;
+        line-height: $line-height-30;
+        @include pad(){
+            font-size: 16px;
+            line-height: $base-line-height;
+        }
+    }
+    .blog-date{
+        display: inline-block;
+        @include pad(){
+            font-size: 16px;
+            line-height: $base-line-height;
+        }
+    }
+}
+.blog-text{
+    font-size: $font-s;
+    line-height: $line-height-30;
+    color: $blog-text-color;
+    @include pad(){
+        font-size: 16px;
+        line-height: $base-line-height;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+.blog-list{
+    margin-bottom: 60px;
+        @include pad(){
+            margin-bottom: 24px;
+        }
+    }
+}
+.pg{
+    justify-content: center;
+    padding-top: 124px;
+    @include pad(){
+        padding-top: 80px;
+    }
+}
+.pg-list{
+    border: 1px solid #555;
+    li{
+        a{
+            padding: 12px 16px;
+            font-size: 18px;
+            color: $blog-text-color;
+            @include mobile(){
+                font-size: 16px;
+                line-height: $base-line-height;
+                padding: 10.5px 15px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: #000;
+            }
+        }
+        &:nth-child(2) {
+            border-right: 1px solid #555;
+            border-left: 1px solid #555;
+        }
+        &:nth-child(3) {
+            border-right: 1px solid #555;
+        }
+        &:nth-child(4) {
+            border-right: 1px solid #555;
+        }
+        &:nth-child(5) {
+            border-right: 1px solid #555;
+        }
+        &:nth-child(6) {
+            border-right: 1px solid #555;
+        }
+        &:first-child a{
+            font-size: 19px;
+            line-height: 29px;
+            padding: 9.5px 12px;
+            background-color: #F2F2F2;
+            @include mobile(){
+                font-size: 16px;
+                line-height: 26px;
+                padding: 9.5px 4px 9.5px 4px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: #000;
+            }
+        }
+        &:last-child a{
+            font-size: 19px;
+            line-height: 29px;
+            padding: 9.5px 12px;
+            background-color: #F2F2F2;
+            @include mobile(){
+                font-size: 16px;
+                line-height: 26px;
+                padding: 9.5px 4px 9.5px 4px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: #000;
+            }
+        }
+
+    }
+}
