@@ -13,20 +13,19 @@
 header{
     background-color: $bgColor;
     .header-outline{
-        // padding-top: 16px;
-        // padding-bottom: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         @include pad(){
             padding-top: 12px;
             padding-bottom: 12px;
         }
         @include mobile(){
+            align-items: center;
             padding: 0;
         }
     }
     .menu{
-        width: 35%;
         @include pad(){
-            width: 53%;
             font-size: $font-s;
             line-height: $line-height-30;
         }
@@ -34,17 +33,16 @@ header{
             width: 100%;
         }
         li{
-            // margin-left: 64px;
+            margin-left: 64px;
             font-size: $font-s;
             line-height: $line-height-30;
-            width: 23.5%;
+            &:hover{
+                opacity: 0.6;
+            }
             @include mobile(){
                 margin: 0;
                 width: 50%;
                 border: 1px solid #fff;
-            }
-            &:hover{
-                opacity: 0.6;
             }
             & a{
                 color: $secondtextColor;
@@ -58,9 +56,9 @@ header{
     }
 }
 .logo{
-    // @include mobile(){
-    //     padding: 16px 0;
-    // }
+    @include mobile(){
+        padding: 16px 0;
+    }
 }
 .logo a{
     width: 80px;
@@ -121,12 +119,17 @@ header{
 }
 .feature{
     background-color: $secondbgColor;
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-    // @include mobile(){
-    //     padding-top: 40px;
-    //     padding-bottom: 40px;
-    // }
+    padding: 80px 0;
+    @include mobile(){
+        padding: 40px 0;
+    }
+    .title{
+        @include mobile(){
+            font-size: $font-m;
+            line-height: $line-height-36;
+            
+        }
+    }
     .title{
         @include mobile(){
             font-size: $font-m;
@@ -183,22 +186,22 @@ header{
             line-height: $line-height-36;
         }
     }
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-    // @include mobile(){
-    //     padding-top: 40px;
-    //     padding-bottom: 40px;
-    // }
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include mobile(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .category-list{
         font-style: italic;
         @include pad(){
             display: block;
-            // width: 80%;
+            width: 80%;
             margin: 0 auto;
         }
-        // @include mobile(){
-        //     width: 100%;
-        // }
+        @include mobile(){
+            width: 100%;
+        }
         li{
             width: 31.33%;
             margin: 0 auto 24px auto;
@@ -251,17 +254,10 @@ header{
     }
 }
 .recommender{
-    // li{
-    //     img{
-    //         width: 100%;
-    //     }
-    // }
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-    // @include mobile(){
-    //     padding-top: 40px;
-    //     padding-bottom: 40px;
-    // }
+    padding: 80px 0;
+    @include mobile(){
+        padding: 40px 0;
+    }
     .title{
         @include mobile(){
             font-size: $font-m;
@@ -314,9 +310,10 @@ header{
 }
 .contactus{
     background-color: $secondbgColor;
-    // @include mobile(){
-    //     padding: 40px 0;
-    // }
+    padding: 80px 0;
+    @include mobile(){
+        padding: 40px 0;
+    }
     .contactus-form{
         max-width: 636px;
         margin: 0 auto;
@@ -338,7 +335,7 @@ header{
             display: block;
         }
         .input-text{
-            // width: 100%;
+            width: 100%;
             border: 1px solid #000;
             padding: 5px 0;
             line-height: $base-line-height;
@@ -348,17 +345,17 @@ header{
         .input-tel,.input-mail{
             padding: 4px 0 4px 12px;
             line-height: $line-height-21;
-            // width: 100%;
-            border: 1px solid #000;
+            width: 100%;
+            // border: 1px solid #000;
         }
         .message{
             padding-top: 6px;
             padding-left: 12px;
-            // width: 100%;
+            width: 100%;
             height: 136px;
             font-size: 16px;
             line-height: $base-line-height;
-            border: 1px solid #000;
+            // border: 1px solid #000;
         }
         .privacy-area{
             @include pad(){
@@ -380,7 +377,7 @@ header{
             border: 0;
             width: 66%;
             margin-left: 110px;
-            margin: 0 auto;
+            // margin: 0 auto;
             @include mobile(){
                 width: 100%;
                 margin-left: 0;
@@ -397,7 +394,7 @@ header{
             }
             &:active {
                 background-color: $textColor;
-                // width: 100%;
+                width: 100%;
                 @include mobile(){
                     background-color: $textColor;
                     width: 90%;
@@ -411,14 +408,12 @@ footer{
     background-color: $bgColor;
     .page{
         // width: 464px;
-        // width: 90%;
-        justify-content: space-between;
         @include mobile(){
             display: none;
         }
         li{
             // width: 25%;
-            // margin-right: 48px;
+            margin-right: 48px;
             &:hover{
                 opacity: 0.6;
             }
@@ -473,25 +468,19 @@ footer{
         }
     }
     .social{
-        width: 20%;
-        // justify-content: flex-end;
-        // @include mobile(){
-        //     // width: 88px;
-        //     width: 25%;
-        // }
+        @include mobile(){
+            // width: 88px;
+        }
         li{
-            // display: flex;
-            // justify-content: flex-end;
-            width: 32.5%;
-            // @include mobile(){
-            //     width: 50%;
-            //     // margin-left: 8px;
-            // }
             &:hover {
                 opacity: 0.6;
             }
-            // width: 33.33%;
-            // margin-left: 32px;
+            width: 33.33%;
+            margin-left: 32px;
+            @include mobile(){
+                width: 48%;
+                margin-left: 8px;
+            }
             img{
                 // width: 48px;
                 height: 48px;
@@ -507,11 +496,11 @@ footer{
             & a{
                 justify-content: flex-end;
             }
-            // &:first-child{
-            //     @include mobile(){
-            //         margin-left: 0;
-            //     }
-            // }
+            &:first-child{
+                @include mobile(){
+                    margin-left: 0;
+                }
+            }
         }
     }
 }
@@ -544,12 +533,12 @@ footer{
     }
 }
 .privacy-policy{
-    // display: flex;
-    // justify-content: space-between;
-    width: 15%;
-    @include pad(){
-        width: 25%;
-    }
+    display: flex;
+    justify-content: space-between;
+    // width: 15%;
+    // @include pad(){
+    //     width: 25%;
+    // }
     // width: 174px;
     a{
         color: #fff;
@@ -567,10 +556,10 @@ footer{
         &:hover{
             opacity: 0.6;
         }
-        // margin-left: 48px;
-        // @include mobile(){
-        //     margin-left: 0;
-        // }
+        margin-left: 48px;
+        @include mobile(){
+            margin-left: 0;
+        }
     }
 
 }
