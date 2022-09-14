@@ -1,0 +1,63 @@
+.select-store{
+    width: 31.33%;
+    margin-bottom: 40px;
+    @include pad(){
+        width: 60%;
+    }
+    @include mobile(){
+        width: 100%;
+    }
+}
+.branch-intro.detail-info{
+    padding: 16px 0 16px 26px;
+}
+.branch-list-item {
+    width: 40%;
+    img{
+        width: 100%;
+        @include pad(){
+            width: 48%;
+        }
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    @include pad(){
+        width: 100%;
+    }
+}
+.branch-detail-list{
+    @include pad(){
+        flex-wrap: nowrap;
+        justify-content:space-between;
+    }
+    @include mobile(){
+        flex-wrap: wrap;
+    }
+}
+.branch-detail-out{
+    width: 100%;
+    @include pad(){
+        width: 48%;
+    }
+    @include mobile(){
+        width: 100%;
+    }
+}
+.googlemap{
+    width: 58%;
+    height: 414px;
+    background-image: url(../../assets/images/googlemap.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    @include pad(){
+        width: 100%;
+    }
+}
+.branch-detail{
+    height: auto;
+    @include pad(){
+        height: none;
+    }
+}

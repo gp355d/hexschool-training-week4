@@ -1,0 +1,47 @@
+---
+title: detail
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="location-content container">
+    <h2 class="title mb-4 mb-sm-3 font-700">門市據點</h2>
+        <span class="select-store d-flex align-center justify-space-between mb-sm-3">
+            <label class="mark" for="">選擇分店</label>
+            <select class="select-items" id="">
+                <option value="">台北中山旗艦店</option>
+            </select>
+        </span>
+    <ul class="branch-detail  d-flex justify-space-between flex-wrap">
+        <li class="branch-list-item mb-6 mb-md-3">
+            <div class="branch-detail-list d-flex flex-wrap">
+                <img src="./assets/images/storepage-1.png" alt="store-1">
+            <div class="branch-detail-out">
+                <h3 class="title">台北中山旗艦店</h3>
+                <div class="branch-intro detail-info">
+                    <ul class="branch-info">
+                        <li class="d-flex mb-1">
+                            <span class="material-symbols-outlined">call</span>
+                            <p class="info">電話：(02)000-1234</p>
+                        </li>
+
+                        <li class="d-flex mb-1">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p class="info">營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p class="info">地址：台北市中山區南京東路25巷2-1號</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+        </li>
+        <li class="googlemap">
+
+        </li>
+    </ul>
+</section>
